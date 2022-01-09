@@ -2,10 +2,14 @@
 import React, { Component } from 'react'
 
 class App extends Component {
+    constructor() {
+        super(); //instantiate App class as Component from react so we can use "state"
+        this.state = {
+            peopleInSpace: []
+          }
+    }
 
-  state = {
-    peopleInSpace: []
-  }
+
 
   render() {
     return (
